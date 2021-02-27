@@ -4,10 +4,10 @@
 <p align="center"><img src="https://img.shields.io/github/watchers/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"> <img src="https://img.shields.io/github/stars/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"> <img src="https://img.shields.io/github/forks/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"> <img src="https://img.shields.io/github/issues/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"></p>
 
 ## About
-![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) (SuperB HR) is a CLI tool to render horizontal ruler/line in the terminal.
+![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) (SuperB `hr`) is a CLI tool to render horizontal ruler/line in the terminal.
 
 ## Story
-Recently, i'm obsessed with [`hr`](https://github.com/LuRsT/hr) and i want a portable shell `hr`, the best i found is *"`POSIX`-ish Way"* from the blog [Alternatives to the 'hr' library](https://grayson.sh/blogs/some-alternatives-to-hr):
+Recently, i'm obsessed with [`hr`](https://github.com/LuRsT/hr) and i want a portable shell `hr`, the best i found is *"`POSIX`-ish Way"* from the blog [Alternatives to the `hr` library](https://grayson.sh/blogs/some-alternatives-to-hr):
 
 ```sh
 printf '%*s' "$(tput cols)" | tr ' ' "${*:-#}"
@@ -29,7 +29,7 @@ exit 0
 - Can output **multiple lines** at once
 - Can define **custom text**
 - Treats **multi-byte symbols** properly
-- ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png)'s default text can be change through environment variables `$HR_DEFAULT_TEXT`
+- ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png)'s default text can be change through [environment variable](#configuration)
 
 ###### ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) can not be `source` or invoke from [Bash](https://www.gnu.org/software/bash), for that use [Gil Gonçalves's `hr`](https://github.com/LuRsT/hr)
 
