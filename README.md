@@ -7,13 +7,13 @@
 ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) (SuperB HR) is a CLI tool to render horizontal ruler/line in the terminal.
 
 ## Story
-Recently, i'm obsessed with [`hr`](https://github.com/LuRsT/hr) and i want a **portable `POSIX` shell** `hr`, the best i found is *"`POSIX`-ish Way"* from the blog [Alternatives to the 'hr' library](https://grayson.sh/blogs/some-alternatives-to-hr):
+Recently, i'm obsessed with [`hr`](https://github.com/LuRsT/hr) and i want a portable shell `hr`, the best i found is *"`POSIX`-ish Way"* from the blog [Alternatives to the 'hr' library](https://grayson.sh/blogs/some-alternatives-to-hr):
 
 ```sh
 printf '%*s' "$(tput cols)" | tr ' ' "${*:-#}"
 ```
 
-but it lacks [Gil Gonçalves's hr](https://github.com/LuRsT/hr) key features like output multiple line, custom text or even treats multi-byte symbols properly. So i decided to create ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) with only **6 lines** of [`portable sh`](https://github.com/dylanaraps/pure-sh-bible):
+but it lacks [Gil Gonçalves's `hr`](https://github.com/LuRsT/hr) key features like output multiple line, custom text or even treats multi-byte symbols properly. So i decided to create ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) based on the blog's method with only **6 lines** of [`portable sh`](https://github.com/dylanaraps/pure-sh-bible):
 
 ```sh
 #!/bin/sh
@@ -26,10 +26,12 @@ exit 0
 
 ## Features
 - Extremely **minimum** *"only **6 lines** of [`portable sh`](https://github.com/dylanaraps/pure-sh-bible)"*
-- Can output **multiple** ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) at once
-- Can output ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) using **custom text**
+- Can output **multiple lines** at once
+- Can define **custom text**
 - Treats **multi-byte symbols** properly
 - ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png)'s default text can be change through environment variables `$HR_DEFAULT_TEXT`
+
+###### ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) can not be `source` or invoke from [Bash](https://www.gnu.org/software/bash), for that use [Gil Gonçalves's `hr`](https://github.com/LuRsT/hr)
 
 ## Contents
 - [About](#about)
