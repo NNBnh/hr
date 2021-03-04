@@ -1,7 +1,7 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/43980777/109386965-eefed000-7930-11eb-8b83-ef85d70196fa.png"></p>
 <p align="center">Portable horizontal ruler for terminal</p>
-<p align="center"><img src="https://img.shields.io/github/license/NNBnh/hr?labelColor=073551&color=4EAA25&style=for-the-badge" alt="License: GPL-3.0"> <img src="https://img.shields.io/badge/development-completed-%234EAA25.svg?labelColor=073551&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></p>
-<p align="center"><img src="https://img.shields.io/github/watchers/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"> <img src="https://img.shields.io/github/stars/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"> <img src="https://img.shields.io/github/forks/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"> <img src="https://img.shields.io/github/issues/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"></p>
+<p align="center"><a href="https://github.com/NNBnh/hr/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/hr?labelColor=073551&color=4EAA25&style=for-the-badge" alt="License: GPL-3.0"></a> <img src="https://img.shields.io/badge/development-completed-%234EAA25.svg?labelColor=073551&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></p>
+<p align="center"><a href="https://github.com/NNBnh/hr/watchers"><img src="https://img.shields.io/github/watchers/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/hr/stargazers"><img src="https://img.shields.io/github/stars/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/hr/network/members"><img src="https://img.shields.io/github/forks/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/hr/issues"><img src="https://img.shields.io/github/issues/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"></a></p>
 
 ## About
 ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) (SuperB HR) is a CLI tool to render horizontal ruler/line in the terminal.
@@ -54,7 +54,7 @@ exit 0
 - Option 1: using `curl`
 
 ```sh
-curl https://raw.githubusercontent.com/NNBnh/hr/main/hr > ~/.local/bin/hr
+curl https://raw.githubusercontent.com/NNBnh/hr/main/bin/hr > ~/.local/bin/hr
 chmod +x ~/.local/bin/hr
 ```
 
@@ -62,7 +62,7 @@ chmod +x ~/.local/bin/hr
 
 ```sh
 git clone https://github.com/NNBnh/hr.git ~/.local/share/hr
-ln -s ~/.local/share/hr/hr ~/.local/bin/hr
+ln -s ~/.local/share/hr/bin/hr ~/.local/bin/hr
 ```
 
 #### Package manager
@@ -129,6 +129,6 @@ Special thanks to:
 
 ---
 
-> <h1 align="center">Made with :heart: by <a href="https://github.com/NNBnh"><i>NNB</i></a></h1>
+> <h1 align="center">Made with ❤️ by <a href="https://github.com/NNBnh"><i>NNB</i></a></h1>
 >
 > <p align="center"><a href="https://www.buymeacoffee.com/nnbnh"><img src="https://img.shields.io/badge/buy_me_a_coffee%20-%23F7CA88.svg?logo=buy-me-a-coffee&logoColor=333333&style=for-the-badge" alt="Buy Me a Coffee"></p>
