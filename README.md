@@ -6,7 +6,7 @@
 ## About
 ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) (SuperB HR) is a CLI tool to render horizontal ruler/line in the terminal.
 
-## Story
+### Story
 Recently, i'm obsessed with [`hr`](https://github.com/LuRsT/hr) and i want a portable shell `hr`, the best i found is *"`POSIX`-ish Way"* from the blog [Alternatives to the `hr` library](https://grayson.sh/blogs/some-alternatives-to-hr):
 
 ```sh
@@ -24,7 +24,7 @@ done
 exit 0
 ```
 
-## Features
+### Features
 - Extremely **minimum** *"only **6 lines** of [`portable sh`](https://github.com/dylanaraps/pure-sh-bible)"*
 - Can output **multiple lines** at once
 - Can define **custom text**
@@ -35,8 +35,8 @@ exit 0
 
 ## Contents
 - [About](#about)
-- [Story](#story)
-- [Features](#features)
+  - [Story](#story)
+  - [Features](#features)
 - [Contents](#contents)
 - [Setup](#setup)
   - [Dependencies](#dependencies)
