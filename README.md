@@ -78,7 +78,7 @@ For [Basher](https://github.com/bpkg/bpkg) user:
 basher install NNBnh/hr
 ```
 
-###### If you can and want to port Clipb to other package managers, feel free to do so.
+###### If you can and want to port SuperB HR to other package managers, feel free to do so.
 
 ## Usage
 Run ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) in the terminal:
