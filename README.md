@@ -3,10 +3,10 @@
 <p align="center"><a href="https://github.com/NNBnh/hr/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/hr?labelColor=073551&color=4EAA25&style=for-the-badge" alt="License: GPL-3.0"></a> <img src="https://img.shields.io/badge/development-completed-%234EAA25.svg?labelColor=073551&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></p>
 <p align="center"><a href="https://github.com/NNBnh/hr/watchers"><img src="https://img.shields.io/github/watchers/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/hr/stargazers"><img src="https://img.shields.io/github/stars/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/hr/network/members"><img src="https://img.shields.io/github/forks/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/hr/issues"><img src="https://img.shields.io/github/issues/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"></a></p>
 
-## About
+## 💡 About
 ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) (SuperB HR) is a CLI tool to render horizontal ruler/line in the terminal.
 
-### Story
+### 📔 Story
 Recently, i'm obsessed with [`hr`](https://github.com/LuRsT/hr) and i want a portable shell `hr`, the best i found is *"`POSIX`-ish Way"* from the blog [Alternatives to the `hr` library](https://grayson.sh/blogs/some-alternatives-to-hr):
 
 ```sh
@@ -24,7 +24,7 @@ done
 exit 0
 ```
 
-### Features
+### ✨ Features
 - Extremely **minimum** *"only **6 lines** of [`portable sh`](https://github.com/dylanaraps/pure-sh-bible)"*
 - Can output **multiple lines** at once
 - Can define **custom text**
@@ -33,24 +33,12 @@ exit 0
 
 ###### ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) can not be `source` or invoke from [Bash](https://www.gnu.org/software/bash), for that use [Gil Gonçalves's `hr`](https://github.com/LuRsT/hr)
 
-## Contents
-- [About](#about)
-  - [Story](#story)
-  - [Features](#features)
-- [Contents](#contents)
-- [Setup](#setup)
-  - [Dependencies](#dependencies)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [Credits](#credits)
-
-## Setup
-### Dependencies
+## 🚀 Setup
+### 🧾 Dependencies
 - `sh` to process
 
-### Installation
-#### Manually
+### 📥 Installation
+#### 🔧 Manually
 - Option 1: using `curl`
 
 ```sh
@@ -65,7 +53,7 @@ git clone https://github.com/NNBnh/hr.git ~/.local/share/hr
 ln -s ~/.local/share/hr/bin/hr ~/.local/bin/hr
 ```
 
-#### Package manager
+#### 📦 Package manager
 For [`bpkg`](https://github.com/bpkg/bpkg) user:
 
 ```sh
@@ -78,9 +66,9 @@ For [Basher](https://github.com/bpkg/bpkg) user:
 basher install NNBnh/hr
 ```
 
-###### If you can and want to port SuperB HR to other package managers, feel free to do so.
+> *If you can and want to port SuperB HR to other package managers, feel free to do so.*
 
-## Usage
+## ⌨️ Usage
 Run ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) in the terminal:
 
 ```sh
@@ -113,14 +101,14 @@ hrhrhrhrhrhrhrhrhrhrhrhrhrhrhrhrhrhrhrhr
 Hello world! Hello world! Hello world! H
 ```
 
-## Configuration
+## ⚙️ Configuration
 ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) is configured through environment variables:
 
 ```sh
 export HR_DEFAULT_TEXT="<text>"
 ```
 
-## Credits
+## 💌 Credits
 Special thanks to:
 - [**hr**](https://github.com/LuRsT/hr) by [Gil Gonçalves](https://github.com/LuRsT)
 - [**Alternatives to the 'hr' library**](https://grayson.sh/blogs/some-alternatives-to-hr) by [Grayson Kent](https://grayson.sh)
