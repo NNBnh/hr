@@ -29,7 +29,7 @@ exit 0
 - Can output **multiple lines** at once
 - Can define **custom text**
 - Treats **multi-byte symbols** properly
-- ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png)'s default text can be change through [environment variable](#configuration)
+- ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png)'s default text can be change through [environment variable](#%EF%B8%8F-configuration)
 
 > *![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) can not be `source` or invoke from [Bash](https://www.gnu.org/software/bash), for that use [Gil Gonçalves's `hr`](https://github.com/LuRsT/hr)*
 
