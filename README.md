@@ -4,7 +4,7 @@
 <p align="center"><a href="https://github.com/NNBnh/hr/watchers"><img src="https://img.shields.io/github/watchers/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/hr/stargazers"><img src="https://img.shields.io/github/stars/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/hr/network/members"><img src="https://img.shields.io/github/forks/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/hr/issues"><img src="https://img.shields.io/github/issues/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"></a></p>
 
 ## 💡 About
-![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) (SuperB HR) is a CLI tool to render horizontal ruler/line in the terminal.
+![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) (SuperB HR) is a CLI tool written in [`portable sh`](https://github.com/dylanaraps/pure-sh-bible) to render horizontal ruler/line in the terminal.
 
 ### 📔 Story
 Recently, i'm obsessed with [`hr`](https://github.com/LuRsT/hr) and i want a portable shell `hr`, the best i found is *"`POSIX`-ish Way"* from the blog [Alternatives to the `hr` library](https://grayson.sh/blogs/some-alternatives-to-hr):
