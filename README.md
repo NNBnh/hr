@@ -1,7 +1,7 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/43980777/109386965-eefed000-7930-11eb-8b83-ef85d70196fa.png"></p>
 <p align="center">Portable horizontal ruler for terminal</p>
-<p align="center"><a href="https://github.com/NNBnh/hr/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/hr?labelColor=073551&color=4EAA25&style=for-the-badge" alt="License: GPL-3.0"></a> <img src="https://img.shields.io/badge/development-completed-%234EAA25.svg?labelColor=073551&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></p>
-<p align="center"><a href="https://github.com/NNBnh/hr/watchers"><img src="https://img.shields.io/github/watchers/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/hr/stargazers"><img src="https://img.shields.io/github/stars/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/hr/network/members"><img src="https://img.shields.io/github/forks/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/hr/issues"><img src="https://img.shields.io/github/issues/NNBnh/hr?labelColor=073551&color=4EAA25&style=flat-square"></a></p>
+<p align="center"><a href="https://github.com/NNBnh/hr/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/hr?labelColor=BF7958&color=EEA160&style=for-the-badge" alt="License: GPL-3.0"></a> <img src="https://img.shields.io/badge/development-completed-%23EEA160.svg?labelColor=BF7958&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></p>
+<p align="center"><a href="https://github.com/NNBnh/hr/watchers"><img src="https://img.shields.io/github/watchers/NNBnh/hr?labelColor=BF7958&color=EEA160&style=flat-square"></a> <a href="https://github.com/NNBnh/hr/stargazers"><img src="https://img.shields.io/github/stars/NNBnh/hr?labelColor=BF7958&color=EEA160&style=flat-square"></a> <a href="https://github.com/NNBnh/hr/network/members"><img src="https://img.shields.io/github/forks/NNBnh/hr?labelColor=BF7958&color=EEA160&style=flat-square"></a> <a href="https://github.com/NNBnh/hr/issues"><img src="https://img.shields.io/github/issues/NNBnh/hr?labelColor=BF7958&color=EEA160&style=flat-square"></a></p>
 
 ## 💡 About
 ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) (SuperB HR) is a CLI tool written in [`portable sh`](https://github.com/dylanaraps/pure-sh-bible) to render horizontal ruler/line in the terminal.
@@ -19,7 +19,7 @@ but it lacks [Gil Gonçalves's `hr`](https://github.com/LuRsT/hr) key features l
 #!/bin/sh
 COLUMNS="${COLUMNS:-$(tput cols)}"
 for text in "${@:-${HR_DEFAULT_TEXT:-─}}"; do
-	printf '%*s' "$COLUMNS" | sed -e "s/ /$text/g" -e "s/^\(.\{$COLUMNS\}\).*/\1/"
+	printf '\033[?7l%*s\033[?7h' "$COLUMNS" | sed -e "s/ /$text/g"
 done
 exit 0
 ```

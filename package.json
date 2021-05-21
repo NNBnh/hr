@@ -1,6 +1,6 @@
 {
   "name": "superbhr",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Portable horizontal ruler for terminal",
   "global": "true",
   "install": "make install"

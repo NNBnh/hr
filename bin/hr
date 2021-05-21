@@ -32,7 +32,7 @@ COLUMNS="${COLUMNS:-$(tput cols)}"
 
 # Start
 for text in "${@:-${HR_DEFAULT_TEXT:-─}}"; do
-	printf '%*s' "$COLUMNS" | sed -e "s/ /$text/g" -e "s/^\(.\{$COLUMNS\}\).*/\1/"
+	printf '\033[?7l%*s\033[?7h' "$COLUMNS" | sed -e "s/ /$text/g"
 done
 
 
