@@ -1,6 +1,6 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/43980777/109386965-eefed000-7930-11eb-8b83-ef85d70196fa.png"></p>
 <p align="center">Portable horizontal ruler for terminal</p>
-<p align="center"><a href="https://github.com/NNBnh/hr/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/hr?labelColor=A05B53&color=BF7958&style=for-the-badge" alt="License: GPL-3.0"></a> <img src="https://img.shields.io/badge/development-completed-%23BF7958.svg?labelColor=A05B53&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></p>
+<p align="center"><a href="https://github.com/NNBnh/hr/blob/main/LICENSE"><img src="https://img.shields.io/github/license/NNBnh/hr?labelColor=A05B53&color=BF7958&style=for-the-badge" alt="License: GPL-3.0"></a> <a href="https://gist.github.com/NNBnh/9ef453aba3efce26046e0d3119dab5a7#development-completed"><img src="https://img.shields.io/badge/development-completed-%23BF7958.svg?labelColor=A05B53&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></a></p>
 <p align="center"><a href="https://github.com/NNBnh/hr/watchers"><img src="https://img.shields.io/github/watchers/NNBnh/hr?labelColor=A05B53&color=BF7958&style=flat-square"></a> <a href="https://github.com/NNBnh/hr/stargazers"><img src="https://img.shields.io/github/stars/NNBnh/hr?labelColor=A05B53&color=BF7958&style=flat-square"></a> <a href="https://github.com/NNBnh/hr/network/members"><img src="https://img.shields.io/github/forks/NNBnh/hr?labelColor=A05B53&color=BF7958&style=flat-square"></a> <a href="https://github.com/NNBnh/hr/issues"><img src="https://img.shields.io/github/issues/NNBnh/hr?labelColor=A05B53&color=BF7958&style=flat-square"></a></p>
 
 ## 💡 About
@@ -8,13 +8,11 @@
 
 ### 📔 Story
 Recently, i'm obsessed with [`hr`](https://github.com/LuRsT/hr) and i want a portable shell `hr`, the best i found is *"`POSIX`-ish Way"* from the blog [Alternatives to the `hr` library](https://grayson.sh/blogs/some-alternatives-to-hr):
-
 ```sh
 printf '%*s' "$(tput cols)" | tr ' ' "${*:-#}"
 ```
 
 but it lacks [Gil Gonçalves's `hr`](https://github.com/LuRsT/hr) key features like output multiple line, custom text or even treats multi-byte symbols properly. So i decided to create ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) based on the blog's method with only **6 lines** of [`portable sh`](https://github.com/dylanaraps/pure-sh-bible):
-
 ```sh
 #!/bin/sh
 COLUMNS="${COLUMNS:-$(tput cols)}"
@@ -35,19 +33,17 @@ exit 0
 
 ## 🚀 Setup
 ### 🧾 Dependencies
-- `sh` to process
+- [Unix commands](https://en.wikipedia.org/wiki/List_of_Unix_commands) to process
 
 ### 📥 Installation
 #### 🔧 Manually
 - Option 1: using `curl`
-
 ```sh
 curl https://raw.githubusercontent.com/NNBnh/hr/main/bin/hr > ~/.local/bin/hr
 chmod +x ~/.local/bin/hr
 ```
 
 - Option 2: using `git`
-
 ```sh
 git clone https://github.com/NNBnh/hr.git ~/.local/share/hr
 ln -s ~/.local/share/hr/bin/hr ~/.local/bin/hr
@@ -55,13 +51,11 @@ ln -s ~/.local/share/hr/bin/hr ~/.local/bin/hr
 
 #### 📦 Package manager
 For [`bpkg`](https://github.com/bpkg/bpkg) user:
-
 ```sh
 bpkg install NNBnh/hr
 ```
 
 For [Basher](https://github.com/bpkg/bpkg) user:
-
 ```sh
 basher install NNBnh/hr
 ```
@@ -70,31 +64,26 @@ basher install NNBnh/hr
 
 ## ⌨️ Usage
 Run ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) in the terminal:
-
 ```sh
 hr [TEXTS]
 ```
 
 Examples:
-
 ```sh
 hr
 ```
 
 this will output:
-
 ```console
 ────────────────────────────────────────
 ```
 
 You can make multiple ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) at the same time and with any `TEXT`:
-
 ```sh
 hr '#' 'hr' 'Hello world! '
 ```
 
 this will output:
-
 ```console
 ########################################
 hrhrhrhrhrhrhrhrhrhrhrhrhrhrhrhrhrhrhrhr
@@ -103,7 +92,6 @@ Hello world! Hello world! Hello world! H
 
 ## ⚙️ Configuration
 ![`hr`](https://user-images.githubusercontent.com/43980777/109386947-cd054d80-7930-11eb-90b3-49836d184f25.png) is configured through environment variables:
-
 ```sh
 export HR_DEFAULT_TEXT="<text>"
 ```
