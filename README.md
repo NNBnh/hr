@@ -49,12 +49,12 @@ ln -s ~/.local/share/hr/bin/hr ~/.local/bin/hr
 ```
 
 #### 📦 Package manager
-For [`bpkg`](https://github.com/bpkg/bpkg) user:
+For [Bpkg](https://github.com/bpkg/bpkg) user:
 ```sh
 bpkg install NNBnh/hr
 ```
 
-For [Basher](https://github.com/bpkg/bpkg) user:
+For [Basher](https://github.com/basherpm/basher) user:
 ```sh
 basher install NNBnh/hr
 ```
